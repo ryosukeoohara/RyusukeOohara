@@ -1,26 +1,23 @@
 SCRIPT
 
-NUM_ITEM = 4
+NUM_ITEM = 7
 
 #============================================================================================
 # モデルのファイル
 #============================================================================================
-MODEL_FILENAME = data/MODEL/refrigerator.x
-MODEL_FILENAME = data/MODEL/bike.x
+MODEL_FILENAME = data/MODEL/refrigerator.x # ０番目
+MODEL_FILENAME = data/MODEL/bike.x         # １番目
+MODEL_FILENAME = data/MODEL/microwave.x    # ２番目
+MODEL_FILENAME = data/MODEL/table.x        # ３番目
+MODEL_FILENAME = data/MODEL/poster.x       # ４番目
 
 #============================================================================================
 # 配置
 #============================================================================================
 ITEMSET # 冷蔵庫
-    TYPE = 0
-    POS = -1100.0 0.0 400.0
+    TYPE = 1
+    POS = -400.0 0.0 -460.0
     ROT = 0.0 0.0 0.0
-END_ITEMSET
-
-ITEMSET # 冷蔵庫
-    TYPE = 0
-    POS = -1000.0 10.0 400.0
-    ROT = 0.0 0.0 0.8
 END_ITEMSET
 
 ITEMSET # 自転車
@@ -31,8 +28,26 @@ END_ITEMSET
 
 ITEMSET # 自転車
     TYPE = 1
-    POS = 1000.0 0.0 429.0
+    POS = 750.0 0.0 429.0
     ROT = 0.0 1.57 0.0
+END_ITEMSET
+
+ITEMSET # 電子レンジ
+    TYPE = 2
+    POS = -800.0 50.0 600.0
+    ROT = 0.0 -1.57 0.0
+END_ITEMSET
+
+ITEMSET # テーブル
+    TYPE = 3
+    POS = -810.0 0.0 600.0
+    ROT = 0.0 -1.57 0.0
+END_ITEMSET
+
+ITEMSET # 看板
+    TYPE = 4
+    POS = -760.0 0.0 700.0
+    ROT = 0.0 -1.57 0.0
 END_ITEMSET
 
 END_SCRIPT
